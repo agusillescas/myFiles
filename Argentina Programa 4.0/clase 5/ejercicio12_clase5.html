@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SendingBoxes.com</title>
+</head>
+<body>
+
+    <h1>Bienvenidos a SendingBoxes.com !</h1> <hr> <br>
+    <p>A Continuación, elija las caracteristicas de su caja para realizar el correspondiente envio.</p> <br> <br>
+
+    <form name="formulario">
+       
+        <!--Input de texto: Nombre Cliente-->
+        
+        <label for="nombreUsuario">Nombre del Cliente:</label>
+        <input type="text" name="nombreUsuario" placeholder="Ej:Pablo.."> <br> <br> <br>
+
+        <!--Input de texto: Material-->
+
+        <label for="materialCaja">Material de la caja:</label> 
+        <select name="materialCaja">
+           <option>cartón</option>
+           <option>madera</option>
+           <option>plástico</option>
+           <option>chapa</option>
+           <option>otros..</option>
+        </select> 
+        <br> <br> <br>
+
+        <!--Checkboxes: Dimension-->
+
+        
+
+            <label for="seleccionRadio">Seleccione las dimensiones para su caja:</label> <br> <br>
+
+            <input type="radio" name="seleccionRadio" id="Diminuta"> Diminuta <br>
+            
+            <input type="radio" name="seleccionRadio" id="Mediana"> Mediana <br>
+        
+            <input type="radio" name="seleccionRadio" id="Grande"> Grande <br>
+       
+     
+
+         <br><br>
+
+
+        <!--Input de Texto: Comentarios-->
+
+        <label for="cajaComentario">Añada un comentario:</label> 
+        <input type="text" name="cajaComentario" placeholder="Ej:que tenga una etiqueta.."> <br> <br> <br>
+
+
+        <!--Input: Boton submit (enviar)-->
+        <label for="button">Enviar</label><br>
+        <input type="button" Onclick="ImprimirValorCampo();"></input> <br> <br> 
+
+
+        <!--Concatenación de las opciones como Strings-->
+
+        
+        <input type="text" id="cajaSeleccionUser" name="cajaConcatenacion" size="100">
+
+
+    </form>
+
+
+    <script type="text/javascript">
+
+
+        function ImprimirValorCampo() {
+
+            let  UserName = (document.formulario.nombreUsuario.value);
+        
+            let materialDeLaCaja = (document.formulario.materialCaja.value);
+
+            let eleccionTamaño = "";
+
+            if (document.getElementById("Diminuta").checked) {
+                eleccionTamaño = "diminuta";
+            }
+            if (document.getElementById("Mediana").checked) {
+                eleccionTamaño = "mediana";
+            }
+            if (document.getElementById("Grande").checked) {
+                eleccionTamaño = "grande";
+            }
+
+            let comentario = (document.formulario.cajaComentario.value);
+
+            let concat = UserName + " ordenó una caja de "+ materialDeLaCaja +" "+ eleccionTamaño + " y agregó el siguiente comentario: " + comentario+".";
+      
+            //alert(UserName + " ordenó una caja de "+ materialDeLaCaja +" "+ eleccionTamaño + " y agregó el siguiente comentario: " + comentario);
+
+            document.formulario.cajaConcatenacion.value = concat;
+        }
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+body {
+    background-image: url(../images/ondas.svg);
+    background-color: #22193F;
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    margin-top: 10%;
+
+}
+
+
+#clase1 {
+    text-align: center;
+    padding: 20%;
+    background-repeat: no-repeat;
+    background-image: url(../images/img-login.jpg) ;
+    background-size: 100%;
+    size: 20%;
+}
+
+
+#clase2 {
+    background-color: rgb(255, 255, 255);
+  
+    padding: 20%;
+    text-align: center;
+}
+
+.row{
+    background-color: blue;
+    text-align: center;
+}

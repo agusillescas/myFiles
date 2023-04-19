@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 9</title>
+</head>
+<body>
+    <form name="convertidor">
+        <p>Dolares</p> 
+        <input type="text" id="campo1"> <br> 
+        <p>Pesos</p> 
+        <input type="text" id="campo2"> <br> <br>
+        <input type="button" value="Convertir" onclick="calcular();"> 
+    </form>
+
+    <script type="text/javascript">
+        function calcular (){
+            var valorDolar = (document.convertidor.campo1.value)*1;
+            var totalvalor = valorDolar * 300;
+            document.convertidor.campo2.value = totalvalor;
+        };
+       
+
+    </script>
+   
+</body>
+</html>

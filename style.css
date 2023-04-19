@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*header*/
+#tittle {
+   background-color: #222;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 5px 5px rgb(151, 137, 165);
+    padding: 3rem 2rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
+
+
+
+/*body background*/
+#background {
+  margin: 0;
+  background-color: #ebebeb;
+}
+
+
+
+
+/*body section*/
+.container {
+    width: 500px;
+    margin: 0 auto;
+}
+section article img {
+    margin-left: 40px; 
+
+}
+.des {
+    text-align: center;
+} 
+article h1 {
+    text-align: center;
+}
+
+
+
+
+/*transition */
+section article {
+    transition: box-shadow 0.5s ease;
+background-color: #fff;
+margin: 1rem 0;
+border-radius: 0.5rem;
+padding: 0.25rem 0;
+cursor: pointer;
+}
+section article:hover {
+box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.795)
+}
+
+section article {
+    width: 500px;
+  
+    transition: width .5s , padding .5s , text-align .5s ease;
+}
+section article:hover {
+    width: 600px;
+    padding: -20px 20px 20px 20px   ;
+    text-align: center;
+}
+section article h1, section article p, section article h2, section article li {
+margin: 1rem;
+}
+.plug {
+    text-align: center;
+    text-shadow: 3px 5px 6px; color: #222;
+}
+
+
+
+
+/*titulo*/
+.first {
+    text-align: center;
+} 
+
+
+
+
+/*footer*/
+.contenedor {
+    background-color: #222;
+    padding: 1 rem;
+    margin: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap ;
+    justify-content: space-around;
+}
+
+.start {
+padding-top: 35px;   
+}
+
+.copy {
+    padding-top: 35px;
+}
+
+
+
+
+
+
+
+
+
+/*
+.start {
+    float: right; 
+  
+}
+
+#copy {
+display: inline-block; 
+position: relative;
+ bottom: 50px;
+ left: 160px;
+ 
+  
+}
+.image {
+    position: relative;
+    margin: 0;
+
+}
+footer div {
+    position: relative; 
+    top: 50px;
+    right: 160px;
+}
+footer section {
+    display: inline-block;
+    text-align: center; 
+}
+.image {
+    display:flexbox;
+}
+.image {
+    position: relative;
+    left: 45%;
+    top: 30px;
+}
+.image {
+    transition: box-shadow 0.3s ease;  
+}
+.image:hover {
+    box-shadow: 0 0.1rem 0.4rem rgb(255, 255, 255)
+    
+} */
+  
+

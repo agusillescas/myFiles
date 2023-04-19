@@ -1,0 +1,113 @@
+/* body */
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(209, 241, 229) ; */
+    background-image: url(./bg-palm.jpg);
+
+}
+
+
+/*header*/
+/* 
+body header {
+
+    padding-top: 22px ;
+    padding-bottom: 22px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    margin-left: 0px ;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    background-color: black;
+} */
+
+/* contenido del header */
+
+/* .contenidoHeader {
+    text-align: center;
+    color: antiquewhite;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
+
+
+/* imagen */
+
+.imagen {
+    display:flex;
+    justify-content: center;
+}
+
+
+/* imagen */
+
+body div img {
+    width: 165px;
+    border-radius: 50%;
+    margin-top: 200px;
+}
+
+/* nombre */
+
+.nombre {
+    text-align: center;
+    margin-bottom:60px ;
+    margin-top: 0px;
+    font-style: italic;
+    font-size: larger;
+}
+
+
+/* links */
+
+/* body main div a  { */
+    .container {
+background-color:antiquewhite  ;
+margin-left:35% ;
+margin-right:35%;
+margin-top: 20px;
+margin-bottom:20px;
+
+border-radius: 50px;
+text-align: center;
+display:flex;
+justify-content: center;
+padding: 10px;
+font-size: larger;
+/* font-family: "Font Awesome 6.4.0 brands"; font-weight: 900;  */
+}
+
+
+/* footer */
+
+body footer {
+   
+    padding-top: 22px ;
+    padding-bottom: 22px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    margin-left: 0px ;
+    margin-right: 0px;
+    margin-top: 40%;
+    margin-bottom: 0px;
+    background-color: black;
+}
+
+/* elemento del footer */
+
+body footer p {
+text-align: center;
+color: antiquewhite;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-style: italic;
+}
+
+div i {
+  display: flex;
+  justify-content:end ;
+}
